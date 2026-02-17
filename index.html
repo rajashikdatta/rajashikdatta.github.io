@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -364,6 +365,11 @@
         }
 
         /* ===== CONTACT ===== */
+        .contact-invite {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -582,7 +588,7 @@
                 <div class="about-text">
                     <p>Hello! I am a final-year Computer Science &amp; Engineering (Artificial Intelligence) undergraduate at the <a href="https://iem.edu.in/" target="_blank">Institute of Engineering &amp; Management, Kolkata</a>, passionate about pushing the boundaries of AI and machine learning. As the Undergraduate Student Research Lead at the <strong>GenAI Centre of Excellence</strong>, I guide student research initiatives while pursuing my own interests in stock market prediction, generative AI, and cognitive medical intelligence.</p>
                     <p>With a strong academic record (CGPA: 9.19/10, ranked 6th in class for Year&nbsp;3 in AY2024-25) and hands-on experience developing real-world solutions, I bridge the gap between theoretical knowledge and practical applications. My work spans from cryptocurrency price-prediction engines to full-stack trading simulators, always focusing on creating impactful technology solutions.</p>
-                    <p>I am currently a <strong>Research Intern</strong> at the <a href="https://www.unl.edu/" target="_blank">University of Nebraska-Lincoln, USA</a> investigating hyperspectral image analysis for plant phenotyping using deep neural networks, and a <strong>Research Scholar</strong> at the <a href="https://www.caluniv.ac.in/" target="_blank">University of Calcutta, India</a> working on feature selection using fuzzy hypergraphs for high-dimensional remote-sensing datasets.</p>
+                    <p>I am currently a <strong>Research Intern</strong> at the <a href="https://www.unl.edu/" target="_blank">University of Nebraska-Lincoln, USA</a> (supervised by Dr. Sruti Das Choudhury) investigating hyperspectral image analysis for plant phenotyping using deep neural networks, where my work was featured in <a href="https://snr.unl.edu/aboutus/what/newstory.aspx?fid=1278" target="_blank" style="color:var(--accent);">UNL's news coverage</a>, and a <strong>Research Scholar</strong> at the <a href="https://www.caluniv.ac.in/" target="_blank">University of Calcutta, India</a> working on feature selection using fuzzy hypergraphs for high-dimensional remote-sensing datasets.</p>
                 </div>
 
                 <div class="stats-row">
@@ -595,8 +601,8 @@
                         <div class="label">Publications</div>
                     </div>
                     <div class="stat-card">
-                        <div class="num">10+</div>
-                        <div class="label">Certifications</div>
+                        <div class="num">4</div>
+                        <div class="label">Research Roles</div>
                     </div>
                     <div class="stat-card">
                         <div class="num">3+</div>
@@ -658,7 +664,10 @@
                     <div class="exp-details">
                         <h4>Research Intern</h4>
                         <div class="org"><a href="https://www.unl.edu/" target="_blank">University of Nebraska-Lincoln, USA</a></div>
-                        <p>Contributing to active research remotely on hyperspectral image analysis for plant phenotyping based on deep neural networks.</p>
+                        <p>Supervisor: Dr. Sruti Das Choudhury</p>
+                        <p>- Spearheaded an explainable AI + data-storytelling clustering pipeline across precision agriculture and pediatric healthcare—grouping 22 Indian crop types using 7 agro-climatic/soil features and segmenting a 500-record hospital cohort—showing that z-score rescaling + removing binary gender prevents charge-dominated clusters and surfaces clinically meaningful cohorts (LOS up to 29 days; charges up to 34,644) for decision support.<br>
+                        - Developed a temporal-embedding visual analytics system for 42 plants from 9 genotypes over 25 days, engineering multi-scale phenotype descriptors (growth rates/accelerations, fourier spectra, wavelet energies, distributional stats) and achieving genotype-aligned DTW clustering (ARI 0.30; NMI 0.62) with cross-validated early-prediction curves and SHAP/LIME-linked causal graphs to explain when/why genotypes diverge.<br>
+                        - Implemented an interactive hyperspectral analysis tool, HyperProbe for calibrated datacubes spanning 517-1700 nm (B=243 bands), enabling rapid pixel/ROI annotation, band-difference + Otsu segmentation (IoU/F1 evaluation), and full-scene classification via 3 model families (MLP/logistic regression/random forest) with built-in ablations that log clicks/ROIs under fixed 5-min label budgets to quantify accuracy-per-effort.</p>
                     </div>
                 </div>
 
@@ -667,7 +676,9 @@
                     <div class="exp-details">
                         <h4>Research Scholar</h4>
                         <div class="org"><a href="https://www.caluniv.ac.in/" target="_blank">University of Calcutta, India</a></div>
-                        <p>Proposed a novel algorithm for feature selection using fuzzy hypergraphs on high-dimensional datasets, with a special focus on high-dimensional remote sensing datasets as application.</p>
+                        <p>Supervisors: Dr. Arup Kumar Chattopadhyay, Prof. Amit Kumar Das, Prof. Amlan Chakrabarti</p>
+                        <p>- Engineered FHFAM (FH-FAM), a fuzzy-hypergraph feature selection algorithm, achieving the best mean accuracy (81.43%) and best mean feature reduction (89.28%) across 15 agriculture/remote-sensing datasets (5/15 wins) with 11.08s average runtime and statistically significant accuracy gains over key baselines (Wilcoxon p &lt; 0.05).<br>
+                        - Proposed SIFHFAM, a stage-wise intuitionistic-fuzzy hypergraph selector with a monotone submodular coverage objective and greedy (1-1/e) guarantee, delivering the top average accuracy (≈84%) while pruning ≈99% features (typically retaining &lt; 2%) across 14 high-dimensional benchmarks in ~0.1s/run under 10× repeated 75/25 train-test splits.</p>
                     </div>
                 </div>
 
@@ -677,6 +688,7 @@
                         <h4>Undergraduate Student Research Lead</h4>
                         <div class="org"><a href="https://genaicoe.iem.edu.in/research" target="_blank">GenAI CoE, IEM</a></div>
                         <p>Leading and managing student research work in the GenAI Centre of Excellence, guiding projects under academic prerequisites and external interests.</p>
+                        <p>Led GenAI CoE’s end-to-end research execution and operations—recruited and onboarded members via interviews, mentored and staffed project teams, coordinated 10+ journal groups, maintained the CoE website, and launched <a href="https://genaicoe.iem.edu.in/reelBook" target="_blank" style="color:var(--accent);">ReelBook</a> (Pearson collaboration) and <a href="https://medium.com/@genai.coe.iem" target="_blank" style="color:var(--accent);">Medium publishing</a> to scale institute-wide research output and AI upskilling at IEM.</p>
                     </div>
                 </div>
 
@@ -685,7 +697,7 @@
                     <div class="exp-details">
                         <h4>Project Intern</h4>
                         <div class="org"><a href="https://bair.ai/" target="_blank">bair.ai</a> (IEM Consultancy Services)</div>
-                        <p>Spearheaded development of a Cluster-based Cryptocurrency Price-prediction Engine with NLP-driven social media sentiment analytics, reducing forecast error and volatility.</p>
+                        <p>Built MemeMetric, an end-to-end cluster-based cryptocurrency forecasting system by architecting the full data/ML pipeline with automated reporting, and integrated real-time Twitter/Telegram/Reddit sentiment signals via NLP to improve robustness and reduce forecast error/volatility.</p>
                     </div>
                 </div>
 
@@ -694,7 +706,7 @@
                     <div class="exp-details">
                         <h4>Undergraduate Research Assistant</h4>
                         <div class="org">Innovation &amp; Entrepreneurship Development Cell (CSE)</div>
-                        <p>Co-authored research paper analyzing pharma stocks using multivariate regression, volatility metrics, and event-study methods. Developed full-stack Stock Trading Simulator.</p>
+                        <p>Co-authored an IEM-HEALS 2024 accepted study analyzing Jul 2019–Dec 2022 price dynamics of 20 pharma stocks using multivariate regression, volatility modeling, and event-study methods, and engineered TraderBot, a Flask+MongoDB real-time trading simulator wired to Yahoo Finance for live strategy backtesting and portfolio experiments.</p>
                     </div>
                 </div>
 
@@ -765,20 +777,20 @@
                     <div class="pub-item">
                         <span class="pub-title">ReproPheno and ReproPhenoNet: A Large-Scale Multimodal Benchmark Dataset and Deep Learning Framework for Reproductive-Stage Plant Phenotyping.</span><br>
                         <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Utsho Banerjee, Rajarshi Karmakar, Vincent Stoerger, Himadri Nath Saha, Sruti Das Choudhury.</span><br>
-                        <span class="pub-venue"><a href="https://aaai.org/conference/aaai/aaai-26/workshop-program-list/#ws04" target="_blank">AAAI AgriAI Workshop 2026</a>, 2026.</span><br>
+                        <span class="pub-venue"><a href="https://aaai.org/conference/aaai/aaai-26/workshop-program-list/#ws04" target="_blank">AAAI AgriAI Workshop</a>, 2026.</span><br>
                         <span class="pub-links"><a href="https://openreview.net/forum?id=4CAJBz13DQ" target="_blank"><i class="fas fa-external-link-alt"></i> OpenReview</a></span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">PlantPhenoLM: Phenotype-Genotype Mapping Inference with Multi-Turn LLM Reasoning and Selective Prediction.</span><br>
                         <span class="pub-authors"><strong>Rajashik Datta</strong>, Sanjan Baitalik, Amit Kumar Das, Sruti Das Choudhury.</span><br>
-                        <span class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge 2026</a>, 2026.</span>
+                        <span class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge on Logic & AI</a>, 2026.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Conversation as Belief Revision: GreedySAT Revision for Global Logical Consistency in Multi-Turn LLM Dialogues.</span><br>
                         <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Amit Kumar Das, Sruti Das Choudhury.</span><br>
-                        <span class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge 2026</a>, 2026.</span>
+                        <span class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge on Logic & AI</a>, 2026.</span>
                     </div>
 
                     <div class="pub-item">
@@ -796,19 +808,19 @@
                     <div class="pub-item">
                         <span class="pub-title">Machine Learning-Driven Insights For Stock Market Analysis And Trading.</span><br>
                         <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Sanket Ghosh, Darothi Sarkar, Ayan Chaudhuri.</span><br>
-                        <span class="pub-venue"><a href="https://irtm.smartsociety.org/about-the-conference/" target="_blank">International Conference on Interdisciplinary Research in Technology and Management (IRTM 2024)</a>.</span>
+                        <span class="pub-venue"><a href="https://irtm.smartsociety.org/about-the-conference/" target="_blank">International Conference on Interdisciplinary Research in Technology and Management (IRTM)</a>, 2024.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">The COVID-19 Shock: An Analysis Of Impacts And Responses Of Indian Stock Market.</span><br>
                         <span class="pub-authors">Sanket Ghosh, Sanjan Baitalik, <strong>Rajashik Datta</strong>, Darothi Sarkar.</span><br>
-                        <span class="pub-venue"><a href="https://irtm.smartsociety.org/about-the-conference/" target="_blank">International Conference on Interdisciplinary Research in Technology and Management (IRTM 2024)</a>.</span>
+                        <span class="pub-venue"><a href="https://irtm.smartsociety.org/about-the-conference/" target="_blank">International Conference on Interdisciplinary Research in Technology and Management (IRTM)</a>, 2024.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Is Indian Financial Market Ready for Pandemics?</span><br>
                         <span class="pub-authors"><strong>Rajashik Datta</strong>, Sanjan Baitalik, Sanket Ghosh, Saugata Ghosh, Swarnendu Ghosh.</span><br>
-                        <span class="pub-venue">International Conference on Advancing Science and Technologies in Health Science (IEM-HEALS 2024).</span><br>
+                        <span class="pub-venue"><a href="http://iem-heals.smartsociety.org/" target="_blank">International Conference on Advancing Science and Technologies in Health Science (IEM-HEALS)</a>, 2024.</span><br>
                         <span class="pub-links"><a href="http://iem-heals.smartsociety.org/wp-content/uploads/2024/11/IEM-HEALS-BOOK-final.pdf" target="_blank"><i class="fas fa-external-link-alt"></i> Book of Abstracts</a></span>
                     </div>
 
@@ -818,6 +830,7 @@
             <!-- CONTACT -->
             <div class="section" id="contact">
                 <h2 class="section-heading">Contact</h2>
+                <p class="contact-invite">I'm always open to research collaborations and discussions. Feel free to reach out!</p>
                 <div class="contact-grid">
                     <a href="mailto:rajashikdatta215@gmail.com" class="contact-card" style="text-decoration:none">
                         <i class="fas fa-envelope"></i>
