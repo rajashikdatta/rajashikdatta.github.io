@@ -30,6 +30,7 @@
             --border: #e2e8f0;
             --sidebar-w: 320px;
             --year-color: #914c4c;
+            --stat-color: #ec4899;
         }
 
         html { scroll-behavior: smooth; }
@@ -219,7 +220,7 @@
         .stat-card .num {
             font-size: 1.6rem;
             font-weight: 700;
-            color: var(--accent);
+            color: var(--stat-color);
         }
         .stat-card .label {
             font-size: 0.7rem;
@@ -464,6 +465,7 @@
                 --text-secondary: #94a3b8;
                 --border: #1e1e2e;
                 --year-color: #e8a0a0;
+                --stat-color: #ec4899;
             }
 
             .sidebar {
@@ -604,7 +606,7 @@
                         <div class="label">CGPA</div>
                     </div>
                     <div class="stat-card">
-                        <div class="num">8</div>
+                        <div class="num">10</div>
                         <div class="label">Publications</div>
                     </div>
                     <div class="stat-card">
@@ -622,11 +624,9 @@
             <div class="section" id="research-interests">
                 <h2 class="section-heading">Research Interests</h2>
                 <div class="research-interests">
+                    <span>Trustworthy ML (xAI + Robustness)</span>
                     <span>Computer Vision (Hyperspectral / Multimodal)</span>
-                    <span>Trustworthy ML &amp; Explainable AI</span>
-                    <span>Representation Learning</span>
-                    <span>Transfer Learning</span>
-                    <span>Online Learning under Distribution Shift</span>
+                    <span>Human-Computer Interaction</span>
                 </div>
             </div>
 
@@ -734,43 +734,43 @@
                     <div class="skill-group">
                         <h4>Programming Languages</h4>
                         <div class="tags">
-                            <span>Python</span><span>C</span><span>C++</span><span>Java</span><span>MATLAB</span>
+                            <span>Python</span><span>C</span><span>C++</span><span>Java</span><span>MATLAB</span><span>SQL</span><span>JavaScript</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>ML &amp; AI Frameworks</h4>
                         <div class="tags">
-                            <span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Scikit-learn</span><span>SHAP</span><span>LIME</span><span>Transformers</span>
+                            <span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Scikit-learn</span><span>SHAP</span><span>LIME</span><span>Transformers</span><span>Hugging Face</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Data Analysis</h4>
                         <div class="tags">
-                            <span>Pandas</span><span>NumPy</span><span>SciPy</span>
+                            <span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Polars</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Databases</h4>
                         <div class="tags">
-                            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
+                            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Cloud &amp; Big Data</h4>
                         <div class="tags">
-                            <span>AWS (S3, EC2, SageMaker)</span><span>Google Cloud (BigQuery, Compute Engine)</span>
+                            <span>AWS (S3, EC2, SageMaker)</span><span>Google Cloud (BigQuery, Compute Engine)</span><span>Spark</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Research &amp; Dev Tools</h4>
                         <div class="tags">
-                            <span>Jupyter</span><span>Git</span><span>Overleaf</span><span>MATLAB App Designer</span><span>TensorBoard</span><span>Docker</span>
+                            <span>Jupyter</span><span>Git</span><span>Overleaf</span><span>MATLAB App Designer</span><span>TensorBoard</span><span>Docker</span><span>Weights &amp; Biases</span>
                         </div>
                     </div>
                     <div class="skill-group" style="grid-column: 1 / -1;">
                         <h4>Visualization</h4>
                         <div class="tags">
-                            <span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>Tableau</span>
+                            <span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>Tableau</span><span>D3.js</span>
                         </div>
                     </div>
                 </div>
@@ -782,52 +782,68 @@
                 <div class="pub-list">
 
                     <div class="pub-item">
-                        <span class="pub-title">ReproPheno and ReproPhenoNet: A Large-Scale Multimodal Benchmark Dataset and Deep Learning Framework for Reproductive-Stage Plant Phenotyping.</span><br>
-                        <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Utsho Banerjee, Rajarshi Karmakar, Vincent Stoerger, Himadri Nath Saha, Sruti Das Choudhury.</span><br>
-                        <span class="pub-venue"><a href="https://aaai.org/conference/aaai/aaai-26/workshop-program-list/#ws04" target="_blank">AAAI AgriAI Workshop</a>, 2026.</span><br>
-                        <span class="pub-links"><a href="https://openreview.net/forum?id=4CAJBz13DQ" target="_blank"><i class="fas fa-external-link-alt"></i> OpenReview</a></span>
+                        <span class="pub-title">Confidence as Tie-breaker: A Lightweight Ensemble Approach for Certified Adversarial Robustness.</span><br>
+                        <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Amit Kumar Das.</span><br>
+                        <span class="pub-venue">Association for Computational Linguistics (ACL) Student Research Workshop, 2024.</span><br>
+                        <span class="pub-links"><a href="https://sanjanbaitalik.github.io/papers/ACL_Polyjudge.pdf" target="_blank"><i class="fas fa-external-link-alt"></i> PDF</a></span>
+                    </div>
+
+                    <div class="pub-item">
+                        <span class="pub-title">Garden Path Recovery: Domain-Aware Linguistic Perturbations for Targeted Syntactic Generalization in Neural Language Models.</span><br>
+                        <span class="pub-authors"><strong>Rajashik Datta</strong>, Sanjan Baitalik, Amit Kumar Das.</span><br>
+                        <span class="pub-venue">Association for Computational Linguistics (ACL) Student Research Workshop, 2024.</span><br>
+                        <span class="pub-links"><a href="https://sanjanbaitalik.github.io/papers/acl_garden%20path.pdf" target="_blank"><i class="fas fa-external-link-alt"></i> PDF</a></span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">PlantPhenoLM: Phenotype-Genotype Mapping Inference with Multi-Turn LLM Reasoning and Selective Prediction.</span><br>
                         <span class="pub-authors"><strong>Rajashik Datta</strong>, Sanjan Baitalik, Amit Kumar Das, Sruti Das Choudhury.</span><br>
-                        <span class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge on Logic & AI</a>, 2026.</span>
+                        <span class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI) Bridge on Logic & AI, 2026.</span><br>
+                        <span class="pub-links"><a href="https://openreview.net/pdf?id=CVPP1gWhyJ" target="_blank"><i class="fas fa-external-link-alt"></i> OpenReview</a></span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Conversation as Belief Revision: GreedySAT Revision for Global Logical Consistency in Multi-Turn LLM Dialogues.</span><br>
                         <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Amit Kumar Das, Sruti Das Choudhury.</span><br>
-                        <span class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge on Logic & AI</a>, 2026.</span>
+                        <span class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI) Bridge on Logic & AI, 2026.</span><br>
+                        <span class="pub-links"><a href="https://openreview.net/pdf?id=a9lEAnSELS" target="_blank"><i class="fas fa-external-link-alt"></i> OpenReview</a></span>
+                    </div>
+
+                    <div class="pub-item">
+                        <span class="pub-title">ReproPheno and ReproPhenoNet: A Large-Scale Multimodal Benchmark Dataset and Deep Learning Framework for Reproductive-Stage Plant Phenotyping.</span><br>
+                        <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Utsho Banerjee, Rajarshi Karmakar, Vincent Stoerger, Himadri Nath Saha, Sruti Das Choudhury.</span><br>
+                        <span class="pub-venue">AAAI Conference on Artificial Intelligence (AAAI) AgriAI Workshop, 2026.</span><br>
+                        <span class="pub-links"><a href="https://openreview.net/forum?id=4CAJBz13DQ" target="_blank"><i class="fas fa-external-link-alt"></i> OpenReview</a></span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Fuzzy Hypergraph Feature Association Map for High-Dimensional Feature Selection in Agriculture and Remote Sensing.</span><br>
                         <span class="pub-authors"><strong>Rajashik Datta</strong>, Sanjan Baitalik, Sruti Das Choudhury, Arup Kumar Chattopadhyay, Amit Kumar Das.</span><br>
-                        <span class="pub-venue"><a href="https://www.springer.com/journal/40815" target="_blank">International Journal of Fuzzy Systems</a>, 2026.</span>
+                        <span class="pub-venue">International Journal of Fuzzy Systems, 2026.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Enhancing Interpretability Through Clustering, Explainable AI, and Narrative Visualization: Applications in Precision Agriculture and Healthcare Patient Segmentation.</span><br>
                         <span class="pub-authors">Sruti Das Choudhury, <strong>Rajashik Datta</strong>, Sanjan Baitalik.</span><br>
-                        <span class="pub-venue"><a href="https://www.mdpi.com/journal/information" target="_blank">Information</a>, 2025.</span>
+                        <span class="pub-venue">Information, 2025.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Machine Learning-Driven Insights For Stock Market Analysis And Trading.</span><br>
                         <span class="pub-authors">Sanjan Baitalik, <strong>Rajashik Datta</strong>, Sanket Ghosh, Darothi Sarkar, Ayan Chaudhuri.</span><br>
-                        <span class="pub-venue"><a href="https://irtm.smartsociety.org/about-the-conference/" target="_blank">International Conference on Interdisciplinary Research in Technology and Management (IRTM)</a>, 2024.</span>
+                        <span class="pub-venue">International Conference on Interdisciplinary Research in Technology and Management (IRTM), 2024.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">The COVID-19 Shock: An Analysis Of Impacts And Responses Of Indian Stock Market.</span><br>
                         <span class="pub-authors">Sanket Ghosh, Sanjan Baitalik, <strong>Rajashik Datta</strong>, Darothi Sarkar.</span><br>
-                        <span class="pub-venue"><a href="https://irtm.smartsociety.org/about-the-conference/" target="_blank">International Conference on Interdisciplinary Research in Technology and Management (IRTM)</a>, 2024.</span>
+                        <span class="pub-venue">International Conference on Interdisciplinary Research in Technology and Management (IRTM), 2024.</span>
                     </div>
 
                     <div class="pub-item">
                         <span class="pub-title">Is Indian Financial Market Ready for Pandemics?</span><br>
                         <span class="pub-authors"><strong>Rajashik Datta</strong>, Sanjan Baitalik, Sanket Ghosh, Saugata Ghosh, Swarnendu Ghosh.</span><br>
-                        <span class="pub-venue"><a href="http://iem-heals.smartsociety.org/" target="_blank">International Conference on Advancing Science and Technologies in Health Science (IEM-HEALS)</a>, 2024.</span><br>
+                        <span class="pub-venue">International Conference on Advancing Science and Technologies in Health Science (IEM-HEALS), 2024.</span><br>
                         <span class="pub-links"><a href="http://iem-heals.smartsociety.org/wp-content/uploads/2024/11/IEM-HEALS-BOOK-final.pdf" target="_blank"><i class="fas fa-external-link-alt"></i> Book of Abstracts</a></span>
                     </div>
 
